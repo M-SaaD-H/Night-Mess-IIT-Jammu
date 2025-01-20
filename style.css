@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/maghrib');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #F7F7F7;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #011627;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+/* Navbar */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.4);
+    padding: 0.5vw 4vw;
+    /* border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; */
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Logo */
+
+.logo {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 4.5vw;
+    width: 4.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    scale: 1.1;
+    height: 100%;
+}
+
+/* Links */
+
+.nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+    font-weight: 500;
+    font-size: 1.2vw;
+}
+
+.nav-links a {
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 1.5px;
+    border-radius: 5px;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#login-btn {
+    font-family: "Poppins", sans-serif;
+    background: #009366;
+    border: none;
+    font-size: 1.3vw;
+    font-weight: 600;
+    padding: 0.6vw 1vw;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 1);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero section */
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 97vh;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, transparent 80%);
+}
+
+.hero-heading {
+    position: absolute;
+    z-index: 1;
+    margin-left: 4vw;
+    margin-top: 5vw;
+}
+
+.hero-heading h1 span {
+    font-family: 'Maghrib', sans-serif;
+    letter-spacing: 2px;
+    font-style: normal;
+    color: #009366;
+    position: relative;
+    font-size: 10vw;
+    bottom: -1vw;
+    left: -5vw;
+    text-shadow: 5px 12px 3px rgba(0, 0, 0, 0.6);
+}
+
+.hero-section h1 {
+    font-size: 7.5vw;
+    line-height: 0.7;
+    font-family: "Bebas Neue", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Search Bar */
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 3.5vw;
+    background-color: white;
+    margin: 4vw 20vw;
+    border-radius: 50px;
+    height: max-content;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 1.3vw 2vw;
+    border: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    color: black;
+    outline: none;
+    font-size: 1.3vw;
+    height: 100%;
+}
+
+.search-bar i {
+    background: #009366;
+    font-size: 2vw;
+    padding: 0.9vw 0.9vw;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 100%;
+    margin: 0.3vw;
+    color: #F7F7F7;
+}
+
+/* Menu tags */
+
+.menu-cat-tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 12vw;
+    position: relative;
+}
+
+.menu-tag {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    background-color: #4E5166;
+    padding: 0.6vw 1vw;
+    border-radius: 12px;
+    text-align: center;
+    width: 14vw;
+}
+
+.menu-tag p {
+    font-size: 1.4vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    position: relative;
+}
+
+#active-tag {
+    background: #009366;
+    position: absolute;
+    height: 100%;
+    width: 14vw;
+    border-radius: 12px;
+    z-index: 0;
+}
+
+/* Tag Content */
+
+.tag-content {
+    height: 44vw;
+    width: 80vw;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.05) inset, 10px 10px 20px rgba(0, 0, 0, 0.05) ;
+    margin: 4vw 0;
+    padding: 4vw 5vw;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+    flex-shrink: 0;
+}
+
+.tag-item {
+    height: 16.5vw;
+    width: 20vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tag-item:hover .tag-item-dets {
+    transform: translateY(0);
+}
+
+.tag-item img {
+    width: 100%;
+    height: auto;
+}
+
+.tag-item-dets {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+    transform: translateY(90px);
+    transition: all 0.5s ease-in-out;
+}
+
+.tag-item-dets h1 {
+    text-wrap: nowrap;
+    font-size: 3.5vw;
+    position: relative;
+    bottom: -2.5vw;
+    z-index: 1;
+    color: #F5F5DC;
+    font-family: "Bebas Neue";
+    letter-spacing: 2px;
+}
+
+.tag-item-det {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.8vw 2.5vw 0.5vw 2.5vw;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.tag-item-det p, .tag-item-det span {
+    font-size: 1.5vw;
+    font-family: "Bebas Neue";
+}
+
+.tag-item-det button {
+    font-family: "Poppins", sans-serif;
+    background: #009366;
+    font-size: 1vw;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 0.5vw;
+    border-radius: 5px;
+}
+
+/* Menu Tags */
+
+.menu-tags {
+    display: flex;
+    overflow-x: hidden;
+    justify-content: start;
+    gap: 20vw;
+    padding: 0 10vw;
+}
+
+hr {
+    margin: 3vw 9vw;
+    opacity: 0.6;
+}
+
+/* Menu Cards */
+
+.menu {
+    padding: 0 7vw;
+    margin: 7vw 0;
+}
+
+.menu h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5.2vw;
+    font-weight: 550;
+}
+
+.menu-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-card {
+    height: 25vw;
+    width: 23%;
+    padding: 1.5vw;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.05) inset, 10px 10px 20px rgba(0, 0, 0, 0.05) ;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.menu-card * {
+    pointer-events: auto;
+}
+
+.menu-item-img {
+    height: 80%;
+    background: pink;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.menu-item-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-item-name h1 {
+    font-size: 3.2vw;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+.menu-item-dets {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1vw;
+    position: relative;
+    bottom: -5vw;
+}
+
+.menu-item-dets p, .menu-item-dets span {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.7vw;
+}
+
+.order-btn {
+    background: #009366;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1vw;
+    padding: 0.3vw 0.7vw;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+/* Orders Page */
+
+.orders-page {
+    padding: 0 7vw;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.orders-page h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 10vw;
+    letter-spacing: 0.3vw;
+}
+
+.orders-page-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+    position: relative;
+}
+
+.checkout {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.05) inset, 10px 10px 20px rgba(0, 0, 0, 0.05) ;
+    height: 25vw;
+    width: 25vw;
+    border-radius: 10px;
+    padding: 1.5vw;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.checkout h1 {
+    font-size: 2.8vw;
+    letter-spacing: 2px;
+}
+
+.my-orders-list {
+    margin-top: 1vw;
+}
+
+.my-orders-list p {
+    font-size: 1vw;
+    font-family: "Poppins", sans-serif;
+}
+
+.checkout .order-btn {
+    width: 100%;
+    padding: 0.7vw 0;
+    font-size: 1.3vw;
+}
+
+.checkout-instructions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.checkout-instructions i {
+    color: #333;
+    padding: 0 0.5vw;
+}
+
+.checkout-instructions input {
+    width: 90%;
+    padding: 0.7vw 0;
+    color: #333;
+    border: none;
+    outline: none;
+}
+
+.checkout .subtotal {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+}
+
+.orders-list {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.order {
+    padding: 2vw 3vw;
+    margin-bottom: 2.5vw;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.05) inset, 10px 10px 20px rgba(0, 0, 0, 0.05) ;
+}
+
+.order-left, .order-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-left {
+    width: 35vw;
+}
+
+.order-left h1 {
+    font-size: 3vw;
+    letter-spacing: 1px;
+    text-wrap: nowrap;
+}
+
+.order-right {
+    flex-direction: column;
+}
+
+.order-right h1 {
+    font-size: 3vw;
+    letter-spacing: 2px;
+}
+
+.order-right p {
+    font-size: 2vw;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.order .order-left .order-img {
+    height: 16vw;
+    width: 40vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 1vw;
+}
+
+.order .order-left .order-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Empty Cart */
+
+#empty-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#empty-cart h1 {
+    font-size: 3vw;
+    letter-spacing: -2px;
+    line-height: 1.2;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+#empty-cart .order-btn {
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    font-weight: 600;
+    margin: 1.5vw 0;
+}
+
+#empty-cart-img {
+    height: 15vw;
+    width: 50%;
+    overflow: hidden;
+    margin: 0vw 0 3vw 0;
+    border-radius: 10px;
+}
+
+#empty-cart-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 10%;
+}
+
+/* Review Section */
+
+.reviews {
+    padding: 0 7vw;
+    margin: 7vw 0;
+}
+
+.reviews h1 {
+    font-size: 5.3vw;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+}
+
+.review-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 4vw;
+}
+
+.review-card {
+    width: 23vw;
+    height: 30vw;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.05) inset, 10px 10px 20px rgba(0, 0, 0, 0.05) ;
+    padding: 2vw;
+    padding-top: 5vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.review-card p {
+    font-size: 1.3vw;
+    text-align: justify;
+}
+
+.reviewer-name {
+    width: max-content;
+    text-align: right;
+    color: gray;
+    margin-top: 3vw;
+}
+
+.review-card h1 {
+    font-size: 10vw;
+    position: absolute;
+    color: gray;
+    opacity: 0.2;
+    z-index: -1;
+    top: -0.5vw;
+    right: 1vw;
+}
+
+/* Footer */
+
+.footer {
+    position: absolute;
+    height: 35vw;
+    width: 96vw;
+    margin: 0 -5vw;
+    padding: 3vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.05) inset, 10px 10px 20px rgba(0, 0, 0, 0.05) ;
+    border-radius: 10px;
+    /* bottom: 3%; */
+    bottom: -100%;
+    /* background: crimson; */
+}
+
+/* Footer top */
+
+/* Footer name */
+
+.foot-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot-top .name h2 {
+    font-size: 3vw;
+    letter-spacing: 5px;
+}
+
+.foot-top .name h1 {
+    font-size: 6.25vw;
+}
+
+.foot-top .name {
+    line-height: 0.9;
+}
+
+/* Footer email input */
+
+.foot-email h2 {
+    font-size: 2vw;
+    margin: 1vw 0;
+    color: #B4B6B9;
+}
+
+.foot-email h2 span {
+    color: white;
+}
+
+.foot-email .input {
+    background: white;
+    width: 30vw;
+    border-radius: 12px;
+    overflow: hidden;
+    text-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+    padding: 0.4vw 0.4vw;
+}
+
+.foot-email .input input {
+    height: 3vw;
+    width: 27vw;
+    border: none;
+    outline: none;
+    color: #333;
+    padding: 0 0.7vw;
+}
+
+.foot-email .input i {
+    font-size: 1.7vw;
+    padding: 0.6vw 1vw;
+    background: #2E2F33;
+    border-radius: 12px;
+}
+
+.footer hr {
+    margin: 2.5vw 0;
+}
+
+/* Footer bottom */
+
+.foot-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.foot-bottom .foot-links {
+    background: crimson;
+    width: 45%;
+    height: 14vw;
+}

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIGHT MESS - IIT JAMMU</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><img src="https://dynamic.design.com/preview/logodraft/6e8b826a-25ea-46d2-87a9-a71c6a86b61c/image/large.png" alt=""></div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="">Offers</a>
+                <a href="">Orders</a>
+                <a href="">Help</a>
+                <a href="">Complaints</a>
+                <a href="">Contact Us</a>
+            </div>
+            <a href="log-in-page.html"><button id="login-btn">Log in</button></a>
+        </div>
+    </div>
+
+    <div class="hero-section">
+        <div class="hero-image"><img src="mirrored_canteen_scene.png" alt=""></div>
+        <div class="hero-heading">
+            <h1>Got Midnight <span>Cravings</span></h1>
+            <h1>we've got your back</h1>
+        </div>
+    </div>
+
+    <div class="search-bar" id="search-bar">
+        <input type="text" placeholder="Search...">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <div class="menu-cat-tags">
+        <div id="active-tag"></div>
+        <div class="mdnt-bowls menu-tag"><p>Midnight Bowls</p></div>
+        <div class="soup menu-tag"><p>Soup Symphony</p></div>
+        <div class="pizza menu-tag"><p>Pizza Paradise</p></div>
+        <div class="burger menu-tag"><p>Burger Bliss</p></div>
+        <div class="beverages menu-tag"><p>Thirst Quenchers</p></div>
+    </div>
+
+    <div class="menu-tags">
+        <div class="tag-content">
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/736x/b4/6b/fd/b46bfd922ebdd3bb41d49b61f0bd6704.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Ramen Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>100</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/736x/48/bd/d9/48bdd97b9a6d9007eceb8eaf6ce7b779.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Veg Biryani</h1>
+                    <div class="tag-item-det">
+                        <p><span>150</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/236x/60/b8/3f/60b83f9cf64e171244fc42c92fffb801.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Chowmein Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>50</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img style="height: 100%; width: auto;" src="https://i.pinimg.com/736x/e3/ab/74/e3ab745310ef29581aa9ab575a32e4ac.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Oden Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>120</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/736x/95/f2/7d/95f27d6a7a187a687ede22ccbb855e56.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Maggie Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>50</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366/bhbbbrxtl8cq2p8su7ug" alt="">
+                <div class="tag-item-dets">
+                    <h1>Chole Bhature</h1>
+                    <div class="tag-item-det">
+                        <p><span>70</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tag-content">
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/736x/b4/6b/fd/b46bfd922ebdd3bb41d49b61f0bd6704.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Ramen Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>100</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/736x/48/bd/d9/48bdd97b9a6d9007eceb8eaf6ce7b779.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Veg Biryani</h1>
+                    <div class="tag-item-det">
+                        <p><span>150</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/236x/60/b8/3f/60b83f9cf64e171244fc42c92fffb801.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Chowmein Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>50</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img style="height: 100%; width: auto;" src="https://i.pinimg.com/736x/e3/ab/74/e3ab745310ef29581aa9ab575a32e4ac.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Oden Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>120</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/736x/95/f2/7d/95f27d6a7a187a687ede22ccbb855e56.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Maggie Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>50</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366/bhbbbrxtl8cq2p8su7ug" alt="">
+                <div class="tag-item-dets">
+                    <h1>Chole Bhature</h1>
+                    <div class="tag-item-det">
+                        <p><span>70</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tag-content">
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/736x/b4/6b/fd/b46bfd922ebdd3bb41d49b61f0bd6704.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Ramen Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>100</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/736x/48/bd/d9/48bdd97b9a6d9007eceb8eaf6ce7b779.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Veg Biryani</h1>
+                    <div class="tag-item-det">
+                        <p><span>150</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/236x/60/b8/3f/60b83f9cf64e171244fc42c92fffb801.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Chowmein Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>50</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img style="height: 100%; width: auto;" src="https://i.pinimg.com/736x/e3/ab/74/e3ab745310ef29581aa9ab575a32e4ac.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Oden Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>120</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/736x/95/f2/7d/95f27d6a7a187a687ede22ccbb855e56.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Maggie Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>50</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366/bhbbbrxtl8cq2p8su7ug" alt="">
+                <div class="tag-item-dets">
+                    <h1>Chole Bhature</h1>
+                    <div class="tag-item-det">
+                        <p><span>70</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tag-content">
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/736x/b4/6b/fd/b46bfd922ebdd3bb41d49b61f0bd6704.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Ramen Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>100</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/736x/48/bd/d9/48bdd97b9a6d9007eceb8eaf6ce7b779.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Veg Biryani</h1>
+                    <div class="tag-item-det">
+                        <p><span>150</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/236x/60/b8/3f/60b83f9cf64e171244fc42c92fffb801.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Chowmein Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>50</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img style="height: 100%; width: auto;" src="https://i.pinimg.com/736x/e3/ab/74/e3ab745310ef29581aa9ab575a32e4ac.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Oden Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>120</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/736x/95/f2/7d/95f27d6a7a187a687ede22ccbb855e56.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Maggie Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>50</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366/bhbbbrxtl8cq2p8su7ug" alt="">
+                <div class="tag-item-dets">
+                    <h1>Chole Bhature</h1>
+                    <div class="tag-item-det">
+                        <p><span>70</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tag-content">
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/736x/b4/6b/fd/b46bfd922ebdd3bb41d49b61f0bd6704.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Ramen Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>100</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/736x/48/bd/d9/48bdd97b9a6d9007eceb8eaf6ce7b779.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Veg Biryani</h1>
+                    <div class="tag-item-det">
+                        <p><span>150</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/236x/60/b8/3f/60b83f9cf64e171244fc42c92fffb801.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Chowmein Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>50</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img style="height: 100%; width: auto;" src="https://i.pinimg.com/736x/e3/ab/74/e3ab745310ef29581aa9ab575a32e4ac.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Oden Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>120</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://i.pinimg.com/736x/95/f2/7d/95f27d6a7a187a687ede22ccbb855e56.jpg" alt="">
+                <div class="tag-item-dets">
+                    <h1>Maggie Bowl</h1>
+                    <div class="tag-item-det">
+                        <p><span>50</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366/bhbbbrxtl8cq2p8su7ug" alt="">
+                <div class="tag-item-dets">
+                    <h1>Chole Bhature</h1>
+                    <div class="tag-item-det">
+                        <p><span>70</span> Rs</p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="menus">
+        <div class="menu">
+            <h1>midnight delights</h1>
+            <div class="menu-cards">
+                <div class="menu-card">
+                    <div class="menu-item-img">
+                        <img src="https://i.pinimg.com/736x/b2/f6/20/b2f620971fb27f62efbe7cddd718c61b.jpg" alt="">
+                    </div>
+                    <div class="menu-item-bottom">
+                        <div class="menu-item-name">
+                            <h1>Burger</h1>
+                        </div>
+                        <div class="menu-item-dets">
+                            <p><span>50</span> Rs</p>
+                            <button class="order-btn" data-tilt-ignore>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-item-img">
+                        <img src="https://i.pinimg.com/736x/ff/b8/e8/ffb8e8c94bf6210bf383e050520b00cf.jpg" alt="">
+                    </div>
+                    <div class="menu-item-bottom">
+                        <div class="menu-item-name">
+                            <h1>Pizza</h1>
+                        </div>
+                        <div class="menu-item-dets">
+                            <p><span>200</span> Rs</p>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-item-img">
+                        <img src="https://i.pinimg.com/736x/e8/35/ed/e835ed89023c2a6d2d1933321d59efc4.jpg" alt="">
+                    </div>
+                    <div class="menu-item-bottom">
+                        <div class="menu-item-name">
+                            <h1>Momos</h1>
+                        </div>
+                        <div class="menu-item-dets">
+                            <p><span>60</span> Rs</p>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-item-img">
+                        <img src="https://i.pinimg.com/736x/73/7e/d9/737ed93987aae98a76fc2e5f12fc0ecc.jpg" alt="">
+                    </div>
+                    <div class="menu-item-bottom">
+                        <div class="menu-item-name">
+                            <h1>Crispy Fries</h1>
+                        </div>
+                        <div class="menu-item-dets">
+                            <p><span>50</span> Rs</p>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <h1>Night Owl's Feast</h1>
+            <div class="menu-cards">
+                <div class="menu-card">
+                    <div class="menu-item-img">
+                        <img src="https://i.pinimg.com/736x/ff/92/26/ff9226bab62bb5bdc5a86645a9c30cc6.jpg" alt="">
+                    </div>
+                    <div class="menu-item-bottom">
+                        <div class="menu-item-name">
+                            <h1>Sandwich</h1>
+                        </div>
+                        <div class="menu-item-dets">
+                            <p><span>50</span> Rs</p>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-item-img">
+                        <img src="https://i.pinimg.com/736x/91/3a/42/913a4203f3bce33396975848d04ba66e.jpg" alt="">
+                    </div>
+                    <div class="menu-item-bottom">
+                        <div class="menu-item-name">
+                            <h1 style="font-size: 3vw">Cheesy Macaroni</h1>
+                        </div>
+                        <div class="menu-item-dets">
+                            <p><span>50</span> Rs</p>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-item-img">
+                        <img src="https://i.pinimg.com/736x/74/55/86/7455861056a201b44b68a5ef65e36583.jpg" alt="">
+                    </div>
+                    <div class="menu-item-bottom">
+                        <div class="menu-item-name">
+                            <h1>Spring Rolls</h1>
+                        </div>
+                        <div class="menu-item-dets">
+                            <p><span>60</span> Rs</p>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-item-img">
+                        <img src="https://i.pinimg.com/736x/1f/a0/29/1fa0294a3673b533804beffa6f7b5f0e.jpg" alt="">
+                    </div>
+                    <div class="menu-item-bottom">
+                        <div class="menu-item-name">
+                            <h1>Hot Dog</h1>
+                        </div>
+                        <div class="menu-item-dets">
+                            <p><span>50</span> Rs</p>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews">
+        <h1>Voices from the Plate</h1>
+        <div class="review-cards">
+            <div class="review-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-max="12">
+                <h1>01</h1>
+                <p>Zinda Rehne ke liye Khana padta hai Malik.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque nam facilis eligendi aut facere dolores asperiores minus ad enim consequatur expedita reiciendis dignissimos hic qui, fuga nulla ea, aliquid atque.</p>
+                <p class="reviewer-name">-Mr. Anonymous</p>
+            </div>
+            <div class="review-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-max="12">
+                <h1>02</h1>
+                <p>Zinda Rehne ke liye Khana padta hai Malik.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores sequi dolore aspernatur quod, quae molestias numquam totam mollitia fugit odio voluptatem debitis perspiciatis quo ullam voluptate cupiditate illum. Ullam, ratione.</p>
+                <p class="reviewer-name">-Mr. Anonymous</p>
+            </div>
+            <div class="review-card" data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-max="12">
+                <h1>03</h1>
+                <p>Zinda Rehne ke liye Khana padta hai Malik.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores sequi dolore aspernatur quod, quae molestias numquam totam mollitia fugit odio voluptatem debitis perspiciatis quo ullam voluptate cupiditate illum. Ullam, ratione.</p>
+                <p class="reviewer-name">-Mr. Anonymous</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="orders-page">
+        <h1>Your Orders</h1>
+        <div class="orders-page-content">
+            <div class="orders-list">
+                <div class="order">
+                    <div id="empty-cart">
+                        <div id="empty-cart-img"><img src="https://files.oaiusercontent.com/file-2PKjBNgquWbZOBmLFhuWXRtN?se=2024-11-22T06%3A32%3A43Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D480a00df-7eab-4d48-8438-1e252a1ceb22.webp&sig=XnJ0lQyC4LAg%2Bq47yIfXi20Xn7ibjoHFdCgFSlgve4g%3D" alt=""></div>
+                        <h1>Feeling hungry?</h1>
+                        <h1>Add some delicious dishes to your order!</h1>
+                        <a href="#search-bar"><button class="order-btn">Add Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkout">
+                <div class="checkout-top">
+                    <div class="my-orders">
+                        <h1>My Cart</h1>
+                        <div class="my-orders-list">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-bottom">
+                    <div class="checkout-instructions">
+                        <i class="fa-solid fa-pen"></i>
+                        <input type="text" placeholder="Add your special requests ...">
+                    </div>
+                    <div class="subtotal">
+                        <p>Subtotal</p>
+                        <div class="total-amount"><span></span> Rs</div>
+                    </div>
+                    <button class="order-btn">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="footer">
+            <div class="foot-top">
+                <div class="name">
+                    <h2>NIGHT MESS</h2>
+                    <h1>IIT JAMMU</h1>
+                </div>
+                <div class="foot-email">
+                    <h2>Get Daily Specials Directly in <span>Your Inbox</span></h2>
+                    <div class="input">
+                        <input type="text" placeholder="Enter your email">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="foot-bottom">
+                <div class="foot-links">
+                    <div class="foot-links-list"></div>
+                    <div class="foot-copyright"></div>
+                </div>
+                <div class="foot-img"></div>
+            </div>
+        </div> -->
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
